@@ -15,7 +15,7 @@ function ThemeColorSwitcher() {
 
     document.documentElement.dataset.color = color;
     localStorage.color = color;
-  }, []);
+  }, [color]);
 
   const onToggle = (newColor: string) => () => {
     setColor(newColor);
