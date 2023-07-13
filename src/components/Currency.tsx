@@ -8,10 +8,15 @@ function Currency({ activeCurrency, onCurrency }: CurrencyProps) {
     <div>
       <label className="block text-sm font-medium text-gray-700 dark:text-white mb-1">
         Currency
-        </label>
-        {Object.keys(CURRENCIES).map((currency) => {
-          <span key={currency} className="chip">{currency} </span>
-        })}
+      </label>
+      {Object.keys(CURRENCIES).map((currency) => (
+        <span
+          key={currency}
+          className={`chip ${currency === activeCurrency} && 'active'}`}
+        >
+          {currency}{" "}
+        </span>
+      ))}
     </div>
   );
 }
