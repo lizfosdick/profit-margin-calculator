@@ -1,6 +1,7 @@
 import ThemeSwitcher from "./components/ThemeSwitcher";
 import ThemeColorSwitcher from "./components/ThemeColorSwitcher";
 import Calculator from "./components/Calculator";
+import FAQ from "./components/FAQ";
 
 function App() {
   return (
