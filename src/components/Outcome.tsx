@@ -1,5 +1,6 @@
 import React from "react";
 import { OutcomeProps } from "../types";
+import { format } from "../utils";
 
 function Outcome({ label, value, currency, withDivider }: OutcomeProps) {
   return (
@@ -9,7 +10,9 @@ function Outcome({ label, value, currency, withDivider }: OutcomeProps) {
       </p>
       <p className="mt-2 flex items-baseline justify-center gap-x-2">
         <span className="text-2xl md:text-3xl font-bold tracking-tight text-brand truncate">{value}</span>
-        <span className="text-[10px] font-semibold leading-6 tracking-wide text-gray-600 dark:text-gray-800">{currency}</span>
+        {format(value, currency)}
+        <span className="text-[10px] font-semibold leading-6 tracking-wide text-gray-600 dark:text-gray-500">
+          {currency}</span>
       </p>
       {withDivider && (
         <div className="px-12 md:px-36">

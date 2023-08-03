@@ -12,7 +12,7 @@ interface TextFieldProps {
 
 interface CurrencyProps {
   activeCurrency?: string;
-  onCurrency: (id: string, symbol: string) => () => void;
+  onCurrency: (id: string) => () => void;
 }
 
 interface OutcomeProps {
@@ -22,17 +22,11 @@ interface OutcomeProps {
   withDivider?: boolean;
 }
 
-type Errors = {
-  costOfItem?: string | null;
-  markup?: string | null;
-};
-
 interface FormState {
   salePrice: Number;
   profit: Number;
   grossMargin: Number;
   currency?: string;
-  errors: Errors;
 }
 
 const initialFormState: FormState = {
@@ -40,10 +34,6 @@ const initialFormState: FormState = {
   profit: 0,
   grossMargin: 0,
   currency: "USD",
-  errors: {
-    costOfItem: null,
-    markup: null,
-  },
 };
 
 export type { TextFieldProps, CurrencyProps, OutcomeProps, FormState, Errors };

@@ -12,9 +12,10 @@ function Currency({ activeCurrency, onCurrency }: CurrencyProps) {
       {Object.keys(CURRENCIES).map((currency) => (
         <span
           key={currency}
-          className={`chip ${currency === activeCurrency} && 'active'}`}
+          className={`chip ${currency === activeCurrency && 'active'}`}
+          onClick={onCurrency(currency)}
         >
-          {currency}{" "}
+          {currency}
         </span>
       ))}
     </div>

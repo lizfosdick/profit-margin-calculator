@@ -23,6 +23,8 @@ function App() {
           <Calculator />
         </div>
       </div>
+
+      <FAQ />
     </main>
   );
 }
