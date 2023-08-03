@@ -16,7 +16,7 @@ function App() {
               Profit Margin Calculator
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-white text-center">
-              Optimize your menu item prices to maximize profits by identifying
+              Optimize your margins to maximize profits by identifying
               the most effective selling prices.
             </p>
           </div>

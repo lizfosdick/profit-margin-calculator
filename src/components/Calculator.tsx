@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useFormik } from "formik";
+
 import Currency from "./Currency";
 import Textfield from "./Textfield";
 import Outcome from "./Outcome";
@@ -69,7 +70,7 @@ function Calculator() {
 
   return (
     <div className="mx-auto max-w-2xl rounded-3xl ring-1 ring-gray-200 dark:ring-gray-700 sm:mt-13 mt-16 lg:mx-0 lg:flex lg:max-w-none">
-      <div className="px-4 py-6 md:p-8 sm:p-10 lg:flex-auto">
+      <div className="px-4 py-6 md:p-8 sm:p-10 lg:flex-auto items-center flex">
         <form
           method="POST"
           autoComplete="off"

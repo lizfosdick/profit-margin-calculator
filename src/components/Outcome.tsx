@@ -9,10 +9,12 @@ function Outcome({ label, value, currency, withDivider }: OutcomeProps) {
         {label}
       </p>
       <p className="mt-2 flex items-baseline justify-center gap-x-2">
-        <span className="text-2xl md:text-3xl font-bold tracking-tight text-brand truncate">{value}</span>
+        <span className="text-2xl md:text-3xl font-bold tracking-tight text-brand truncate">
         {format(value, currency)}
+        </span>
         <span className="text-[10px] font-semibold leading-6 tracking-wide text-gray-600 dark:text-gray-500">
-          {currency}</span>
+          {currency}
+          </span>
       </p>
       {withDivider && (
         <div className="px-12 md:px-36">
