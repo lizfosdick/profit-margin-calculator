@@ -29,4 +29,6 @@ export const CURRENCIES: Record<string, string> = {
   EUR: "€",
   INR: "₹",
   USD: "$",
+  CAD: "$",
+  GBP: "£",
 };

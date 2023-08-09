@@ -2,6 +2,7 @@ import ThemeSwitcher from "./components/ThemeSwitcher";
 import ThemeColorSwitcher from "./components/ThemeColorSwitcher";
 import Calculator from "./components/Calculator";
 import FAQ from "./components/FAQ";
+import Notes from "./components/Notes";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
           <Calculator />
         </div>
       </div>
-
+      <Notes />
       <FAQ />
     </main>
   );
