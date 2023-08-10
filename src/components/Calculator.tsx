@@ -111,9 +111,7 @@ function Calculator() {
         </form>
       </div>
 
-      <div className="mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-lg lg:flex-shrink-0">
-        OutCome
-      </div>
+
       <div className="rounded-2xl bg-gray-50 dark:bg-black text-center ring-1 ring-inset ring-gray-900/5 dark:ring-fray-700 lg:flex lg:flex-col lg:justify-center py-8">
         <div className="space-y-8">
           <Outcome
